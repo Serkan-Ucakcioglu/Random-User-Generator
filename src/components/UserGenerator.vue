@@ -39,7 +39,7 @@ onMounted(getUser);
 
 <template>
   <div class="container">
-    <img :class="state.gender" :src="state.picture" :title="state.name" />
+    <img :class="state.gender" :src="state.picture" loading="lazy" :title="state.name" />
     <h1>{{ state.name }} {{ state.surname }}</h1>
     <h3>{{ state.email }}</h3>
     <button :class="state.gender" @click="getUser">Random User</button>
