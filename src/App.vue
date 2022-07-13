@@ -6,7 +6,7 @@
 import UserGenerator from './components/UserGenerator.vue';
 </script>
 
-<style lang="scss">
+<style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -16,7 +16,7 @@ import UserGenerator from './components/UserGenerator.vue';
   margin-top: 60px;
 }
 .container{
-  width: 500px;
+  max-width: 500px;
   margin: 0px auto;
 }
 </style>
