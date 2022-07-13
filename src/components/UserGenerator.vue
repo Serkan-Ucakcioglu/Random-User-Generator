@@ -77,6 +77,8 @@ img:hover {
 button {
   padding: 1rem 2rem;
   border-radius: 0.5rem;
+  font-size: 17px;
+  font-weight: bold;
   color: #fff;
   cursor: pointer;
 }
