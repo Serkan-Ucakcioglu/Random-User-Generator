@@ -14,8 +14,6 @@ import UserGenerator from './components/UserGenerator.vue';
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-  display: flex;
-  justify-content: center;
 }
 .container{
   max-width: 500px;
