@@ -1,7 +1,7 @@
 <script setup lang="ts">
 //import 
 import { reactive } from "@vue/reactivity";
-import { onMounted } from "@vue/runtime-core";
+//import { onMounted } from "@vue/runtime-core";
 import axios from "axios";
 
 
@@ -34,7 +34,7 @@ const getUser = () => {
   });
 };
 
-onMounted(getUser);
+//onMounted(getUser) windows loading api request 
 </script>
 
 <template>
