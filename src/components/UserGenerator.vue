@@ -34,7 +34,7 @@ const getUser = () => {
   });
 };
 
-//onMounted(getUser) windows loading api request 
+//onMounted(getUser) window loading api request 
 </script>
 
 <template>
