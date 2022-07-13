@@ -16,7 +16,7 @@ import UserGenerator from './components/UserGenerator.vue';
   margin-top: 60px;
 }
 .container{
-  max-width: 500px;
+  width: 500px;
   margin: 0px auto;
 }
 </style>
