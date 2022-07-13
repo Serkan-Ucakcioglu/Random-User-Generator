@@ -5,7 +5,7 @@ import { reactive } from "@vue/reactivity";
 import axios from "axios";
 
 
-// user type 
+// user type interface
 interface User {
   name: string,
   surname: string,
