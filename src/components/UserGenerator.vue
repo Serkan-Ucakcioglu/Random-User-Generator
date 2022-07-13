@@ -47,10 +47,15 @@ onMounted(getUser);
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
+<style scoped >
 .female {
   border: 5px solid #ffc0cb;
   background: #b46f7a;
+}
+h1,h3{
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
 }
 
 .male {
