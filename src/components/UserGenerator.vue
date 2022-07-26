@@ -37,7 +37,7 @@ const getUser = () => {
 </script>
 
 <template>
-  <div class="content">
+  <div :class="state.gender" class="content">
     <div class="container">
       <img
         :class="state.gender"
