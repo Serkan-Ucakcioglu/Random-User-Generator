@@ -1,20 +1,19 @@
 <script setup lang="ts">
-//import 
+//import
 import { reactive } from "@vue/reactivity";
 //import { onMounted } from "@vue/runtime-core";
 import axios from "axios";
 
-
 // user type interface
 interface User {
-  name: string,
-  surname: string,
-  email: string,
-  gender: string,
-  picture: string
+  name: string;
+  surname: string;
+  email: string;
+  gender: string;
+  picture: string;
 }
-//state 
-const state: User =  reactive({
+//state
+const state: User = reactive({
   name: "John",
   surname: "Doe",
   email: "john@gmail.com",
@@ -23,7 +22,7 @@ const state: User =  reactive({
 });
 //
 
-//get random user 
+//get random user
 const getUser = () => {
   axios.get("https://randomuser.me/api").then((res) => {
     state.name = res.data.results[0].name.first;
@@ -34,27 +33,33 @@ const getUser = () => {
   });
 };
 
-//onMounted(getUser) window loading api request 
+//onMounted(getUser) window loading api request
 </script>
 
 <template>
   <div class="content">
     <div class="container">
-    <img :class="state.gender" :src="state.picture" loading="lazy" :title="state.name" />
-    <h1>{{ state.name }} {{ state.surname }}</h1>
-    <h3>{{ state.email }}</h3>
-    <button :class="state.gender" @click="getUser">Random User</button>
-  </div>
+      <img
+        :class="state.gender"
+        :src="state.picture"
+        loading="lazy"
+        :title="state.name"
+      />
+      <h1>{{ state.name }} {{ state.surname }}</h1>
+      <h3>{{ state.email }}</h3>
+      <button :class="state.gender" @click="getUser">Random User</button>
+    </div>
   </div>
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped >
+<style scoped>
 .female {
   border: 5px solid #ffc0cb;
   background: #b46f7a;
 }
-h1,h3{
+h1,
+h3 {
   font-size: 25px;
   font-weight: bold;
   color: white;
