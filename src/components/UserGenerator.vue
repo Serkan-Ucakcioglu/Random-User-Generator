@@ -37,7 +37,7 @@ const getUser = () => {
 </script>
 
 <template>
-  <div :class="state.gender" class="content">
+  <div class="content">
     <div class="container">
       <img
         :class="state.gender"
@@ -58,6 +58,7 @@ const getUser = () => {
   border: 5px solid #ffc0cb;
   background: #b46f7a;
 }
+
 h1,
 h3 {
   font-size: 25px;
